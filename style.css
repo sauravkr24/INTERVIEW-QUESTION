@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+
+  
+  .btn {
+    border: 2px;
+    border-radius: 10px;
+    padding: 12px 52px;
+    color: white;
+    background: #0c6186;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    text-shadow: 1px 1px 3px black;
+    box-shadow: 3px3px 10px black;
+  }
+  
+  .paragraph {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+  }
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    color: aliceblue;
+    text-align: center;
+    background-color: rgb(97, 178, 39);
+    transition: width  5s linear;
+  }
+  
+  .box:hover {
+    width: 500px;
+  }
+  
+  .circle {
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(111, 19, 172);
+    border-radius: 100%;
+  }
+  
+  .box2 {
+    color: white;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .box2::after {
+    content: "decrease screen size below 1000px to see the change";
+  }
+  
+  @media screen and (max-width: 900px) {
+    .box2 {
+      background-color: #00a5ec;
+      width: 200px;
+      border-radius: 100%;
+      text-align: center;
+    }
+  
+    .box2::after {
+      content: none;
+    }
+  }
+  
+  .color-box {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 30%;
+    animation: color-change 10s infinite;
+    /* animation-duration: 4s; */
+  }
+  
+  @keyframes color-change {
+    0% {
+      background-color: rgb(195, 255, 0);
+      border: 5px ridge rgb(0, 26, 255);
+    }
+    20% {
+      background-color: rgb(255, 0, 157);
+      border: 5px solid orangered;
+    }
+    40% {
+      background-color: #00a5ec;
+      border: 5px double green;
+    }
+    60% {
+      background-color: green;
+      border: 5px dotted rgb(255, 30, 105);
+    }
+    80% {
+        background-color: #0c6186;
+        border: 5px ridge blueviolet;
+    }
+    100%{
+        background-color: aqua;
+        border: 5px ridge darkred;
+    }
+  }
+  
+  .masterHead {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("./Day-2/20191015_152655.jpg");
+    background-size: cover;
+  }
+  
+  .text {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 2rem;
+    color: rgb(35, 186, 65);
+  }
+  
+  .btn-master {
+    padding: 12px 52px;
+    width: 200px;
+    height: 50px;
+  }
+  
+  .header {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    background-color: #e9e9e9;
+    box-shadow: 0 0 5px grey;
+    height: 75px;
+  }
+  
+  .header > img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 2px;
+    left: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  
+  ul {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    right: 10px;
+  }
+  
+  ul li {
+    list-style-type: none;
+  }
+  
+  .btn-list {
+    background-color: #25aee9;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .flex-container {
+    display: inline-flex;
+  }
+  .card {
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: coral;
+    margin: 30px;
+    padding: 85px 0;
+    box-sizing: border-box;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .flex-container {
+      display: inline;
+      flex-direction: row;
+    }
+  }
+  
+  @media screen and (min-width: 481px) and (max-width: 900px) {
+    .btn-colored {
+      background-color: coral;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .btn-colored {
+      background-color: green;
+    }
+  }
+  
+  .flex-container1 {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container1 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  
+  .box3 {
+    border: 1px solid grey;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000ff;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+  }
+  
+  .box3:hover {
+    background-color: #ffcccc;
+    width: 200px;
+    height: 200px;
+    transform: rotate(180deg);
+  }
+  
+  .box4 {
+    width: 200px;
+    height: 100px;
+    background-color: #ffcccc;
+    transform: translate(40px, 30px) rotate(30deg);
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    grid-template-rows: 30px 30px;
+    grid-auto-flow: row;
+  }
+  
+  .item {
+    margin: 2px;
+    padding: 2px;
+  }
+  
+  .item-a {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background-color: #00a5ec;
+  }
+  .item-b {
+    background-color: yellow;
+  }
+  
+  .item-c {
+    background-color: coral;
+  }
+  
+  .item-d {
+    background-color: rgb(90, 172, 90);
+  }
+  
+  .item-e {
+    grid-column: 5;
+    grid-row: 1 / 3;
+    background-color: aquamarine;
+  }
+  
+  .box5 p {
+    color: rgb(146, 50, 114);
+  }
+  
+  .btn-example1 {
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 52px;
+    color: white;
+    background: #00a5ec;
+    cursor: pointer;
+  }
+  
+  .btn-example1:hover {
+      background-color: rgb(176, 255, 80);
+  }
